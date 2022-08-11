@@ -1,0 +1,23 @@
+:root {
+    /* Fonts */
+    --font-family: 'Inter', sans-serif;
+    --font-family: 'Roboto', sans-serif;
+
+    /* Colors */
+    --dark1:#111111;
+    --dark2:#555555;
+    --dark3:#777777;
+    --dark4: #999999;
+
+    --light1:#FFFFFF;
+    --light2:#EEEEEE;
+    --light3:#CCCCCC;
+    
+    --pink:#FF3998;
+    --Green:#39FFA0;
+    --Red:#FF3939;
+    --Light_green:#EDFFF6;
+    --Light_orange:#FFF0E8;
+}
+
+

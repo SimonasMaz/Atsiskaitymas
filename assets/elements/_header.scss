@@ -1,0 +1,94 @@
+.header {
+    padding: 32px 32px 0 32px;
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 364px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    @include xm {
+        max-width: 700px;
+        padding: 32px 34px 0 34px;
+    };
+
+    @include xl {
+        max-width: 900px;
+        padding: 40px 62px 0 62px;
+    };
+
+    @include xxl {
+        max-width: 1280px;
+        padding: 70px 80px 0 80px;
+    };
+    
+
+
+    &__nav {
+        &--img1 {
+            .img1_hover:hover {
+                background-color: black;
+            };
+            
+
+            
+            @include xl {
+                visibility: hidden;
+                position: absolute;
+            };
+
+
+        }
+
+
+        &--img2{
+            visibility: hidden;
+            position: absolute;
+            z-index: 1;
+
+
+            @include xl {
+                visibility: visible;
+                position: relative;
+                    
+                };
+
+            @include xxl{
+                visibility: hidden;
+                position: absolute;
+            };
+                
+                
+
+
+            
+        }
+
+
+        &--list{
+            visibility: hidden;
+            position: absolute;
+            
+
+            a{
+                text-decoration: none;
+                color: $dark2;
+                font-size: 20px;
+                padding-right: 28px;
+                
+            }
+            a:last-child {
+                color: $pink;
+                padding-right: 0;
+            }
+            
+
+            @include xxl{
+                visibility: visible;
+                position: relative;
+                
+            }
+        }
+    }
+}

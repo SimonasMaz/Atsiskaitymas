@@ -1,0 +1,35 @@
+
+.container {
+    background-color: $light1;
+    max-width: 428px;
+    width: 100%;
+    margin:0 auto;
+    contain: content;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    
+
+    @include xm {
+        max-width: 768px;
+    };
+
+    @include xl {
+        max-width: 1024px;
+    };
+
+    @include xxl {
+        max-width: 1440px;
+    };
+
+
+
+    
+    
+
+   
+
+
+
+}

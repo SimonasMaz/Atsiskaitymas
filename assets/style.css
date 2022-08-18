@@ -55,6 +55,122 @@ table {
 /* End reset styles */
 /* Fonts */
 /* Colors */
+.container {
+  background-color: #FFFFFF;
+  max-width: 428px;
+  width: 100%;
+  margin: 0 auto;
+  contain: content;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.header {
+  padding: 32px 32px 0 32px;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 364px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .header {
+    max-width: 700px;
+    padding: 32px 34px 0 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    max-width: 900px;
+    padding: 40px 62px 0 62px;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    max-width: 1280px;
+    padding: 70px 80px 0 80px;
+  }
+}
+.header__nav--img1 .img1_hover:hover {
+  background-color: black;
+}
+@media (min-width: 1024px) {
+  .header__nav--img1 {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+.header__nav--img2 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  .header__nav--img2 {
+    visibility: visible;
+    position: relative;
+  }
+}
+@media (min-width: 1440px) {
+  .header__nav--img2 {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+.header__nav--list {
+  visibility: hidden;
+  position: absolute;
+}
+.header__nav--list a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 20px;
+  padding-right: 28px;
+}
+.header__nav--list a:last-child {
+  color: #FF3998;
+  padding-right: 0;
+}
+@media (min-width: 1440px) {
+  .header__nav--list {
+    visibility: visible;
+    position: relative;
+  }
+}
+
 body {
   font-family: "Inter", sans-serif;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
 }/*# sourceMappingURL=style.css.map */

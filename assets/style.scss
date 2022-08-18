@@ -10,10 +10,29 @@
 
 
 
-
+@import "./elements/container";
+@import "./elements/header";
 
 
 
 body {
     font-family: $font-family;
+    margin: 0 auto;
+
+   
+    
+    
+    
+
+    @include xm {
+        max-width: 768px;
+    };
+
+    @include xl {
+        max-width: 1024px;
+    };
+
+    @include xxl {
+        max-width: 1440px;
+    };
 }

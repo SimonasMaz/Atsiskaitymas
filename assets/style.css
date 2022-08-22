@@ -55,6 +55,19 @@ table {
 /* End reset styles */
 /* Fonts */
 /* Colors */
+.btn {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  width: 188px;
+  height: 75px;
+  border: 4px solid;
+  border-radius: 100px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, rgb(255, 154, 0) 0%, rgb(216, 0, 207) 22%, rgb(23, 147, 0) 52%, rgb(56, 57, 0) 91%, rgb(255, 196, 0) 100%);
+  background-color: #FFFFFF;
+}
+
 .container {
   background-color: #FFFFFF;
   max-width: 428px;
@@ -62,8 +75,6 @@ table {
   margin: 0 auto;
   contain: content;
   align-items: center;
-  display: flex;
-  justify-content: center;
 }
 @media (min-width: 768px) {
   .container {
@@ -153,6 +164,47 @@ table {
     visibility: visible;
     position: relative;
   }
+}
+
+.hero {
+  padding: 80px 32px 0 32px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.hero_textbox {
+  width: 274px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.hero_textbox-lounching {
+  color: #FF3998;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.hero_textbox-header {
+  font-size: 48px;
+  font-weight: 900;
+  padding-bottom: 24px;
+}
+.hero_textbox-text {
+  font-size: 20px;
+  color: #555555;
+  line-height: 1.5;
+  padding-bottom: 32px;
+}
+
+.hero_img {
+  overflow: hidden;
+  position: absolute;
+  top: -100px;
+  left: 240px;
+}
+.hero_img-pic {
+  width: 354px;
+  height: 561px;
 }
 
 body {

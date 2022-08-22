@@ -1,0 +1,89 @@
+.hero {
+    padding: 80px 32px 0 32px;
+    display: flex;
+    justify-content: flex-start;
+    
+    position: relative;
+
+    
+}
+
+.hero_textbox {
+    width: 274px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include xm {
+
+    };
+
+    @include xl {
+
+    };
+
+    @include xxl {
+
+    }
+
+    &-lounching {
+        color: $pink;
+        font-weight: 700;
+        padding-bottom: 24px;
+    }
+    
+    &-header {
+        font-size: 48px;
+        font-weight: 900;
+        padding-bottom: 24px;
+
+        @include xm {
+
+        };
+    
+        @include xl {
+    
+        };
+    
+        @include xxl {
+    
+        }
+    }
+
+    &-text {
+        font-size: 20px;
+        color: $dark2;
+        line-height: 1.5;
+        padding-bottom: 32px;
+        
+    }
+}
+
+
+
+.hero_img {
+    overflow: hidden;
+    position: absolute;
+    top: -100px;
+    left: 240px;
+    
+    
+    
+    
+
+
+
+ &-pic {
+    width: 354px;
+    height: 561px;
+    
+    
+    
+
+   
+
+    
+    
+ }
+  
+}  

@@ -1,23 +1,28 @@
 .hero {
     padding: 80px 32px 0 32px;
     display: flex;
+    flex: content;
     justify-content: flex-start;
-    height: auto;
+    max-height: 500px;
     position: relative;
 
     @include xm {
         max-width: 700px;
         padding: 32px 34px 0 34px;
+        max-height: 390px;
     };
 
     @include xl {
         max-width: 900px;
         padding: 40px 62px 0 62px;
+        max-height: 360px;
+
     };
 
     @include xxl {
         max-width: 1280px;
         padding: 70px 80px 0 80px;
+        max-height: 500px;
     };
 
     
@@ -109,19 +114,22 @@
     @include xm {
         position: relative;
         top: -100px;
-        left: 240px;
+        left: 220px;
+        overflow: visible
     };
 
     @include xl {
         position: relative;
         top: -100px;
         left: 140px;
+        overflow: visible
     };
 
     @include xxl {
         position: relative;
         top: -100px;
         left: 0px;
+        overflow: visible;
 
     };
     
@@ -145,7 +153,8 @@
 
     @include xxl {
         width: 700px;
-        height: auto
+        height: auto;
+        
 
 
     };

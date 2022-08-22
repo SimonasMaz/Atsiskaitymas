@@ -69,7 +69,6 @@ table {
 }
 
 .container {
-  background-color: #FFFFFF;
   max-width: 428px;
   width: 100%;
   margin: 0 auto;
@@ -169,26 +168,30 @@ table {
 .hero {
   padding: 80px 32px 0 32px;
   display: flex;
+  flex: content;
   justify-content: flex-start;
-  height: auto;
+  max-height: 500px;
   position: relative;
 }
 @media (min-width: 768px) {
   .hero {
     max-width: 700px;
     padding: 32px 34px 0 34px;
+    max-height: 390px;
   }
 }
 @media (min-width: 1024px) {
   .hero {
     max-width: 900px;
     padding: 40px 62px 0 62px;
+    max-height: 360px;
   }
 }
 @media (min-width: 1440px) {
   .hero {
     max-width: 1280px;
     padding: 70px 80px 0 80px;
+    max-height: 500px;
   }
 }
 
@@ -251,7 +254,8 @@ table {
   .hero_img {
     position: relative;
     top: -100px;
-    left: 240px;
+    left: 220px;
+    overflow: visible;
   }
 }
 @media (min-width: 1024px) {
@@ -259,6 +263,7 @@ table {
     position: relative;
     top: -100px;
     left: 140px;
+    overflow: visible;
   }
 }
 @media (min-width: 1440px) {
@@ -266,6 +271,7 @@ table {
     position: relative;
     top: -100px;
     left: 0px;
+    overflow: visible;
   }
 }
 .hero_img-pic {
@@ -277,6 +283,53 @@ table {
     width: 700px;
     height: auto;
   }
+}
+
+.upsell {
+  padding: 80px 0 0 0;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .upsell {
+    max-width: 1024px;
+    padding: 100px 62px 0 62px;
+  }
+}
+@media (min-width: 1440px) {
+  .upsell {
+    max-width: 1280px;
+    padding: 182px 80px 0 80px;
+  }
+}
+
+.upsell_textbox {
+  padding: 122px 32px 32px 32px;
+  background-color: aquamarine;
+  max-height: 320px;
+}
+@media (min-width: 1024px) {
+  .upsell_textbox {
+    border-radius: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .upsell_textbox {
+    padding: 154px 64px 64px 64px;
+  }
+}
+.upsell_textbox-header {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+@media (min-width: 1440px) {
+  .upsell_textbox-header {
+    padding-bottom: 24px;
+  }
+}
+.upsell_textbox-text {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 body {

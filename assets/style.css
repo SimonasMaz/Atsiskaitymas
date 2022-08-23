@@ -146,7 +146,6 @@ table {
 .header__nav--img2 {
   visibility: hidden;
   position: absolute;
-  z-index: 1;
 }
 @media (min-width: 1024px) {
   .header__nav--img2 {
@@ -192,21 +191,21 @@ table {
 @media (min-width: 768px) {
   .hero {
     max-width: 700px;
-    padding: 32px 34px 0 34px;
+    padding: 100px 34px 0 34px;
     max-height: 390px;
   }
 }
 @media (min-width: 1024px) {
   .hero {
     max-width: 900px;
-    padding: 40px 62px 0 62px;
+    padding: 100px 62px 0 62px;
     max-height: 360px;
   }
 }
 @media (min-width: 1440px) {
   .hero {
     max-width: 1280px;
-    padding: 70px 80px 0 80px;
+    padding: 170px 80px 0 80px;
     max-height: 500px;
   }
 }

@@ -442,13 +442,68 @@ table {
   overflow-x: scroll;
   cursor: pointer;
 }
+@media (min-width: 1440px) {
+  .showcase_slider {
+    overflow-x: hidden;
+  }
+}
 .showcase_slider-box {
-  background-color: aqua;
-  border: 2px solid transparent;
+  background-color: #EEEEEE;
+  border: 0 solid transparent;
   border-radius: 16px;
   width: 290px;
   height: 400px;
   margin-bottom: 20px;
+}
+
+.slider_box-textbox {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  height: 74px;
+}
+
+.textbox_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.textbox_left-el1 {
+  font-size: 12px;
+  font-weight: 500;
+  color: orange;
+}
+.textbox_left-el2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.textbox_left-el3 {
+  font-size: 18;
+  color: #777777;
+}
+
+.textbox_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.textbox_right-el1 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #777777;
+}
+.textbox_right-el2 {
+  display: flex;
+}
+.textbox_right-el2 .eth_text {
+  padding-left: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.textbox_right-el3 {
+  font-size: 18px;
+  color: #777777;
 }
 
 body {

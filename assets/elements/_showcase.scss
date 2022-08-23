@@ -62,14 +62,83 @@
     overflow-x: scroll;
     cursor: pointer;
 
+    @include xxl {
+        overflow-x: hidden;
+    }
+
 
 
     &-box {
-        background-color: aqua;
-    border: 2px solid transparent;
+        background-color: $light2;
+    border: 0 solid transparent;
     border-radius: 16px;
     width: 290px;
     height: 400px;
     margin-bottom: 20px;
+    }
+}
+
+.slider_box-textbox {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    
+}
+
+
+.textbox_left {
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+
+
+    &-el1 {
+        font-size: 12px;
+        font-weight: 500;
+        color: orange;
+    }
+
+    &-el2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &-el3 {
+        font-size: 18;
+        color: $dark3;
+    }
+    
+    
+}
+
+
+.textbox_right {
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+    &-el1 {
+        font-size: 12px;
+        font-weight: 500;
+        color: $dark3;
+    }
+
+
+    &-el2 {
+        display: flex;
+    }
+
+    &-el2 .eth_text {
+        padding-left: 8px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &-el3 {
+        font-size: 18px;
+        color: $dark3;
     }
 }

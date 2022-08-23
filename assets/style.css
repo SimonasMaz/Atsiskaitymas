@@ -388,6 +388,69 @@ table {
     position: relative;
   }
 }
+.showcase {
+  padding: 32px 32px 0 32px;
+}
+.showcase a:visited {
+  color: #555555;
+}
+@media (min-width: 768px) {
+  .showcase {
+    max-width: 700px;
+    padding: 64px 34px 0 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .showcase {
+    max-width: 1024px;
+    padding: 40px 62px 0 62px;
+  }
+}
+@media (min-width: 1440px) {
+  .showcase {
+    max-width: 1280px;
+    padding: 95px 80px 0 80px;
+  }
+}
+.showcase_textbox {
+  padding-bottom: 40px;
+}
+@media (min-width: 1440px) {
+  .showcase_textbox {
+    padding-bottom: 56px;
+  }
+}
+.showcase_textbox-header {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+@media (min-width: 1440px) {
+  .showcase_textbox-header {
+    padding-bottom: 24px;
+  }
+}
+.showcase_textbox-text {
+  color: #555555;
+  font-size: 20px;
+}
+
+.showcase_slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  overflow-x: scroll;
+  cursor: pointer;
+}
+.showcase_slider-box {
+  background-color: aqua;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  width: 290px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0 auto;

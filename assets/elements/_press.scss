@@ -1,0 +1,82 @@
+.press_list {
+    padding: 64px 32px 0 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 364px;
+
+    @include xm {
+        max-width: 700px;
+        padding: 64px 34px 0 34px;
+    };
+
+    @include xl {
+        max-width: 1024px;
+        padding: 100px 62px 0 62px;
+    };
+
+    @include xxl {
+        max-width: 1280px;
+        padding: 120px 80px 0 80px;
+        
+    };
+
+    img {
+        padding-bottom: 25px;
+
+        
+    }
+
+    :first-child {
+        visibility: hidden;
+        position: absolute;
+
+        @include xm {
+            visibility: visible;
+            position: relative;
+        
+        };
+    
+        @include xl {
+           
+        };
+    
+        @include xxl {
+            
+            
+        };
+    }
+
+    :nth-child(2) {
+        @include xm {
+            visibility: hidden;
+            position: absolute;
+
+        }
+    }
+
+    
+
+
+
+    :nth-child(5){
+        visibility: hidden;
+        position: absolute;
+
+        @include xm {
+        
+        };
+    
+        @include xl {
+            visibility: visible;
+            position: relative;
+           
+        };
+    
+        @include xxl {
+            
+            
+        };
+    }
+}

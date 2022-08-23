@@ -1,0 +1,15 @@
+.border {
+    border: 1px solid $light2;
+    max-width: 900px;
+    
+
+    @include xl {
+        margin: 0 62px;
+
+    }
+
+    @include xxl {
+        max-width: 1280px;
+        margin: 0 80px;
+    }
+}

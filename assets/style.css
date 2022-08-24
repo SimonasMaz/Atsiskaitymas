@@ -362,7 +362,7 @@ table {
 @media (min-width: 768px) {
   .hero_img2 {
     position: relative;
-    top: 40px;
+    top: 37px;
     left: 160px;
     overflow: visible;
   }
@@ -370,7 +370,7 @@ table {
 @media (min-width: 1024px) {
   .hero_img2 {
     position: relative;
-    top: -30px;
+    top: -35px;
     left: 200px;
     overflow: visible;
   }
@@ -378,7 +378,7 @@ table {
 @media (min-width: 1440px) {
   .hero_img2 {
     position: relative;
-    top: -30px;
+    top: -35px;
     left: 200px;
     overflow: visible;
   }
@@ -637,6 +637,12 @@ table {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .footer_nav {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .footer_nav-heading {
   height: 136px;
   display: flex;
@@ -660,6 +666,18 @@ table {
   grid-auto-flow: column;
   gap: 40px;
 }
+@media (min-width: 768px) {
+  .nav_list {
+    min-width: 300px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav_list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    min-width: 600px;
+  }
+}
 
 .list {
   display: flex;
@@ -682,6 +700,22 @@ table {
   padding-top: 14px;
 }
 
+.footer_bottom {
+  display: flex;
+  color: #999999;
+  padding-top: 64px;
+  justify-content: space-between;
+}
+.footer_bottom-lounching {
+  visibility: hidden;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .footer_bottom-lounching {
+    visibility: visible;
+    position: relative;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   margin: 0 auto;

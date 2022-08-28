@@ -1,0 +1,304 @@
+.hero {
+    padding: 80px 32px 0 32px;
+    display: flex;
+    flex: content;
+    justify-content: flex-start;
+    max-height: 500px;
+    position: relative;
+
+
+    @include xm {
+        max-width: 700px;
+        padding: 100px 34px 0 34px;
+        max-height: 390px;
+    };
+
+    @include xl {
+        max-width: 900px;
+        padding: 100px 62px 0 62px;
+        max-height: 360px;
+
+    };
+
+    @include xxl {
+        max-width: 1280px;
+        padding: 170px 80px 0 80px;
+        max-height: 500px;
+    };
+
+
+
+    
+}
+
+
+
+
+
+.hero_textbox {
+    width: 274px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include xm {
+        width: 400px;
+
+    };
+
+    @include xl {
+        width: 400px;
+
+    };
+
+    @include xxl {
+        width: 620px;
+
+    };
+
+
+   
+
+
+    &-lounching {
+        color: $pink;
+        font-weight: 700;
+        padding-bottom: 24px;
+
+        
+    }
+    
+    &-header {
+        font-size: 48px;
+        font-weight: 900;
+        padding-bottom: 24px;
+
+        @include xm {
+
+        };
+    
+        @include xl {
+    
+        };
+    
+        @include xxl {
+            font-size: 96px;
+            padding-bottom: 32px;
+    
+        };
+    }
+
+
+    &-header2 {
+        font-size: 56px;
+        font-weight: 900;
+        padding-bottom: 24px;
+    }
+    
+
+    &-text {
+        font-size: 20px;
+        color: $dark2;
+        line-height: 1.5;
+        padding-bottom: 62px;
+
+        @include xm {
+
+        };
+    
+        @include xl {
+    
+        };
+    
+        @include xxl {
+            padding-bottom: 71px;
+    
+        };
+        
+    }
+
+    &-text2 {
+        font-size: 20px;
+        color: $dark2;
+        line-height: 1.5;
+        padding-bottom: 62px;
+        max-width: 210px;
+
+        @include xm {
+            max-width: 380px;
+
+        };
+    
+        @include xl {
+    
+        };
+    
+        @include xxl {
+            padding-bottom: 71px;
+            max-width: 520px;
+    
+        };
+        
+    }
+}
+
+
+
+.hero_img {
+    overflow: hidden;
+    position: absolute;
+    top: -100px;
+    left: 240px;
+
+    @include xm {
+        position: relative;
+        top: -100px;
+        left: 160px;
+        overflow: visible
+    };
+
+    @include xl {
+        position: relative;
+        top: -100px;
+        left: 140px;
+        overflow: visible
+    };
+
+    @include xxl {
+        position: relative;
+        top: -100px;
+        left: 0px;
+        overflow: visible;
+
+    };
+    
+    
+    
+    
+
+
+
+ &-pic {
+    width: 354px;
+    height: 561px;
+
+    @include xm {
+
+    };
+
+    @include xl {
+
+    };
+
+    @include xxl {
+        width: 700px;
+        height: auto;
+        
+
+
+    };
+    
+    
+    
+
+   
+
+    
+    
+ }
+  
+}  
+
+
+.hero2 {
+    padding: 64px 33px 88px 35px;
+    display: flex;
+    flex: content;
+    justify-content: flex-start;
+    max-height: 500px;
+    position: relative;
+    
+
+
+    @include xm {
+        max-width: 700px;
+        padding: 32px 34px 80px 34px;
+        max-height: 420px;
+    };
+
+    @include xl {
+        max-width: 900px;
+        padding: 40px 62px 70px 62px;
+        max-height: 360px;
+
+    };
+
+    @include xxl {
+        max-width: 1280px;
+        padding: 70px 80px 0 80px;
+        max-height: 430px;
+    };
+
+
+   
+
+
+
+    
+}
+
+.hero_img2 {
+    overflow: hidden;
+    position: absolute;
+    top: 150px;
+    left: 260px;
+
+    @include xm {
+        position: relative;
+        top: 35px;
+        left: 160px;
+        overflow: visible
+    };
+
+    @include xl {
+        position: relative;
+        top: -35px;
+        left: 200px;
+        overflow: visible
+    };
+
+    @include xxl {
+        position: relative;
+        top: -35px;
+        left: 200px;
+        overflow: visible;
+
+    };
+    
+
+
+ &-pic2 {
+    width: 354px;
+    height: 561px;
+
+    @include xm {
+
+    };
+
+    @include xl {
+
+    };
+
+    @include xxl {
+        width: 700px;
+        height: auto;
+        
+
+
+    };
+    
+    
+    
+ }
+  
+}

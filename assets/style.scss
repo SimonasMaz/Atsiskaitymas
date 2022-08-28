@@ -1,6 +1,9 @@
 @import "./base/reset";
 @import "./base/variables";
+@import "./atoms/btn";
 @import "./mixin/mixin";
+@import "./atoms/border";
+
 
 
 
@@ -12,7 +15,11 @@
 
 @import "./elements/container";
 @import "./elements/header";
-
+@import "./elements/hero"; 
+@import "./elements/upsell"; 
+@import "./elements/press";
+@import "./elements/showcase";
+@import "./elements/footer";
 
 
 body {

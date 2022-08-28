@@ -1,0 +1,182 @@
+.footer {
+    padding: 64px 32px 105px 32px;
+    
+    
+    @include xm {
+        
+        padding: 72px 34px 105px 34px;
+    };
+
+    @include xl {
+        
+        padding: 90px 62px 105px 62px;
+    };
+
+    @include xxl {
+        
+        padding: 120px 80px 105px 80px;
+    };
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    @include xm {
+        flex-direction: row;
+        align-items: center;
+        
+        
+    };
+
+    @include xl {
+        
+        
+    };
+
+    @include xxl {
+        
+        
+    };
+
+    &-heading {
+        height: 136px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 64px;
+
+
+        img {
+            padding-right: 16px;
+        };
+
+        p {
+            color: $dark2;
+            font-size: 20px;
+        }
+    }
+
+    
+}
+
+.nav_list {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    gap:40px;
+
+    @include xm {
+        min-width: 300px;
+        
+        
+    };
+
+    @include xl {
+        
+        
+    };
+
+    @include xxl {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    min-width: 600px;
+    };
+
+    
+
+      
+
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    color: $dark2;
+    
+
+   
+
+    a {
+        text-decoration: none;
+        padding-top: 14px;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: $dark2;
+    }
+    
+
+   h3 {
+    padding-bottom: 15px;
+    font-weight: 700;
+   }
+
+   li {
+    padding-top: 14px;
+   }
+
+    
+    
+
+    
+
+}     
+
+
+.footer_bottom {
+    display: flex;
+    color: $dark4;
+    padding-top: 64px;
+    justify-content: space-between;
+
+
+    @include xm {
+        
+        
+    };
+
+    @include xl {
+        
+        
+    };
+
+    @include xxl {
+        
+        
+    };
+
+
+
+     &-lounching {
+        visibility: hidden;
+        position: absolute;
+
+        @include xm {
+            visibility: visible;
+            position: relative;
+        
+        
+        };
+    
+        @include xl {
+            
+            
+        };
+    
+        @include xxl {
+            
+            
+        };
+
+
+
+
+     }
+}

@@ -1,0 +1,144 @@
+.showcase {
+    padding: 32px 0 32px 32px;
+
+    a:visited {
+        color: $dark2;
+    };
+
+    @include xm {
+        
+        padding: 64px 0 34px 34px;
+    };
+
+    @include xl {
+        
+        padding: 40px 0 62px 62px;
+    };
+
+    @include xxl {
+        max-width: 1280px;
+        padding: 95px 0 60px 80px;
+        
+    };
+
+    &_textbox {
+        padding-bottom: 40px;
+
+        @include xxl {
+            padding-bottom: 56px;
+        };
+        
+        &-header{
+            font-size: 40px;
+            font-weight: 500;
+            padding-bottom: 16px;
+
+            @include xxl {
+                padding-bottom: 24px;
+            };
+        };
+
+        &-text {
+            color: $dark2;
+            font-size: 20px;
+        }
+
+
+
+
+    }
+}
+
+
+    
+
+
+
+
+.showcase_slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    overflow-x: scroll;
+    cursor: pointer;
+
+    @include xxl {
+        overflow-x: hidden;
+    }
+
+
+
+    &-box {
+        background-color: $light2;
+    border: 0 solid transparent;
+    border-radius: 16px;
+    width: 290px;
+    height: 400px;
+    margin-bottom: 20px;
+    }
+}
+
+.slider_box-textbox {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    
+}
+
+
+.textbox_left {
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+
+
+    &-el1 {
+        font-size: 12px;
+        font-weight: 500;
+        color: orange;
+    }
+
+    &-el2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &-el3 {
+        font-size: 18;
+        color: $dark3;
+    }
+    
+    
+}
+
+
+.textbox_right {
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+    &-el1 {
+        font-size: 12px;
+        font-weight: 500;
+        color: $dark3;
+    }
+
+
+    &-el2 {
+        display: flex;
+    }
+
+    &-el2 .eth_text {
+        padding-left: 8px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &-el3 {
+        font-size: 18px;
+        color: $dark3;
+    }
+}
